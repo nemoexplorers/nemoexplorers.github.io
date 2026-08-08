@@ -1,142 +1,38 @@
-  <!DOCTYPE html>
-  <html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="네모 탐험대: 폴리오미노 월드 공식 안내 페이지">
+  <title>네모 탐험대: 폴리오미노 월드</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="eyebrow">NEMO EXPLORERS</p>
+      <h1>네모 탐험대<br><small>폴리오미노 월드</small></h1>
+      <p class="lead">네모 조각을 발견하고, 돌리고, 맞추며 떠나는 어린이 폴리오미노 퍼즐 여행</p>
+    </section>
 
-    <title>네모 탐험대</title>
-    <meta
-      name="description"
-      content="네모 조각을 관찰하고 맞추며 생각하는 즐거움을 발견하는 어린이 퍼즐 게임, 네모 탐험대입니다."
-    >
+    <section class="card" aria-labelledby="about-title">
+      <h2 id="about-title">앱 소개</h2>
+      <p>네모 연구소에서 조각을 발견하고, 도감에서 모양을 살펴보며, 월드 탐험과 오늘의 퍼즐을 완성해 보세요. 보물 탐험에서는 가로와 세로 줄을 채워 보물과 업적을 모을 수 있습니다.</p>
+      <ul>
+        <li>모노미노부터 펜토미노까지 21종의 조각</li>
+        <li>8개 월드와 64개 탐험 단계</li>
+        <li>매일 새롭게 도전하는 오늘의 퍼즐</li>
+        <li>큰 버튼과 쉬운 드래그 조작</li>
+      </ul>
+    </section>
 
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        color: #263238;
-        background: #f5fbf6;
-        font-family:
-          Pretendard, "Noto Sans KR", "Apple SD Gothic Neo",
-          sans-serif;
-        line-height: 1.7;
-      }
-
-      main {
-        width: min(720px, calc(100% - 40px));
-        margin: 0 auto;
-        padding: 80px 0;
-      }
-
-      .brand {
-        margin-bottom: 12px;
-        color: #4f9b67;
-        font-size: 18px;
-        font-weight: 700;
-      }
-
-      h1 {
-        margin: 0;
-        color: #214e34;
-        font-size: clamp(36px, 8vw, 56px);
-        line-height: 1.25;
-      }
-
-      .headline {
-        margin: 24px 0 0;
-        color: #41624c;
-        font-size: clamp(20px, 4vw, 26px);
-        font-weight: 700;
-      }
-
-      .introduction {
-        margin-top: 32px;
-        font-size: 17px;
-      }
-
-      .game {
-        margin-top: 56px;
-        padding: 32px;
-        border: 1px solid #dcecdf;
-        border-radius: 24px;
-        background: #ffffff;
-        box-shadow: 0 12px 32px rgba(41, 91, 57, 0.08);
-      }
-
-      .game h2 {
-        margin: 0 0 16px;
-        color: #2e6b43;
-        font-size: 26px;
-      }
-
-      .features {
-        margin: 24px 0 0;
-        padding-left: 22px;
-      }
-
-      footer {
-        margin-top: 64px;
-        padding-top: 24px;
-        border-top: 1px solid #dce8df;
-        color: #718076;
-        font-size: 14px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <main>
-      <header>
-        <p class="brand">NEMO EXPLORERS</p>
-        <h1>네모 탐험대</h1>
-        <p class="headline">
-          네모 조각으로 발견하는 생각의 즐거움
-        </p>
-      </header>
-
-      <section class="introduction">
-        <p>
-          네모 탐험대는 아이들이 다양한 네모 조각을 관찰하고,
-          돌리고, 뒤집고, 맞추는 과정에서 스스로 생각하는 즐거움을
-          발견할 수 있도록 만드는 어린이 퍼즐 게임 브랜드입니다.
-        </p>
-
-        <p>
-          정답을 빠르게 찾는 것보다 직접 시도하고 새로운 방법을
-          발견하는 경험을 소중하게 생각합니다. 아이들이 자신의 속도로
-          탐험하며 공간 감각과 문제 해결력을 자연스럽게 키울 수 있는
-          게임을 만들어 갑니다.
-        </p>
-      </section>
-
-      <section class="game">
-        <h2>네모 탐험대: 폴리오미노 월드</h2>
-
-        <p>
-          여러 개의 정사각형이 이어진 폴리오미노 조각과 함께 떠나는
-          첫 번째 네모 탐험입니다.
-        </p>
-
-        <ul class="features">
-          <li>여러 폴리오미노 조각을 직접 발견하는 네모 연구소</li>
-          <li>발견한 조각을 관찰하고 움직여 보는 네모 도감</li>
-          <li>다양한 퍼즐 세계를 여행하는 월드 탐험</li>
-          <li>매일 새로운 문제를 만나는 오늘의 퍼즐</li>
-          <li>조각을 배치하고 보물을 모으는 보물 탐험</li>
-        </ul>
-
-        <p>
-          작은 네모 하나에서 시작해 더 넓은 폴리오미노 월드를
-          탐험해 보세요.
-        </p>
-      </section>
-
-      <footer>
-        <p>© 2026 Nemo Explorers. All rights reserved.</p>
-      </footer>
-    </main>
-  </body>
-  </html>
+    <section class="card links" aria-labelledby="support-title">
+      <h2 id="support-title">안내 및 문의</h2>
+      <a href="privacy/">개인정보처리방침</a>
+      <a href="mailto:nemoexplorers.official@gmail.com">nemoexplorers.official@gmail.com</a>
+    </section>
+  </main>
+  <footer>© 2026 Nemo Explorers</footer>
+</body>
+</html>
