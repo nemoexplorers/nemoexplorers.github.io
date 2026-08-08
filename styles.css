@@ -58,6 +58,25 @@ a { color: #39701f; font-weight: 700; text-underline-offset: 3px; }
 .links { display: grid; gap: 8px; }
 .links h2 { margin-bottom: 4px; }
 
+.introduction { position: relative; overflow: hidden; }
+.introduction::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: -64px;
+  bottom: -76px;
+  border-radius: 36px;
+  background: var(--mint);
+  transform: rotate(18deg);
+  z-index: 0;
+}
+.introduction > * { position: relative; z-index: 1; }
+.introduction .eyebrow { margin: 0 0 4px; }
+.introduction h2 { font-size: clamp(1.45rem, 5vw, 1.9rem); }
+.introduction p:not(.eyebrow) { max-width: 650px; color: var(--muted); }
+.introduction p + p { margin-top: 16px; }
+
 .section-heading { margin: 10px 4px 14px; }
 .section-heading .eyebrow { margin-bottom: 2px; }
 .section-heading h2 { margin: 0; font-size: 1.65rem; }
