@@ -168,8 +168,8 @@ a { color: #39701f; font-weight: 700; text-underline-offset: 3px; }
   grid-auto-flow: column;
   grid-auto-columns: 290px;
   gap: 16px;
-  margin: 0 calc(50% - 50vw);
-  padding: 4px max(16px, calc(50vw - 380px)) 22px;
+  margin: 0;
+  padding: 4px 2px 22px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
